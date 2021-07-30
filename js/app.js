@@ -119,8 +119,8 @@ btnRegistro.addEventListener("click", function() {
     datos.append("nombreR", txtNombre.value);
     datos.append("contrasenaR", txtContrasena.value);
     datos.append("fechaR", txtFecha.value);
-    fetch("http://tpaepg.orgfree.com/registro.php", {
-    //fetch("https://tallerprogramacionavanzada.000webhostapp.com/registro.php", {
+    //fetch("http://tpaepg.orgfree.com/registro.php", {
+    fetch("https://tallerprogramacionavanzada.000webhostapp.com/registro.php", {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         body: datos
     })
@@ -161,8 +161,8 @@ btnIngresar.addEventListener("click", function () {
     datosI.append("correoI", txtCorreoI.value);
     datosI.append("contrasenaI", txtContrasenaI.value);
 
-    fetch("http://tpaepg.orgfree.com/ingreso.php", {
-    //fetch("https://tallerprogramacionavanzada.000webhostapp.com/ingreso.php", {
+    //fetch("http://tpaepg.orgfree.com/ingreso.php", {
+    fetch("https://tallerprogramacionavanzada.000webhostapp.com/ingreso.php", {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         body: datosI
     })
@@ -205,14 +205,6 @@ camera.addEventListener("change", function(e) {
     link.download = "test.png";
     link.href = photo.toDataURL("image/png").replace("image/png", "image/octet-stream");
     link.click();
-    
-/*    photo.src = URL.createObjectURL(e.target.files[0]);
-    photoData = new FormData();
-    photoData.append("foto", e.target.files[0]);
-    fetch(window.location.href + "upload", {
-        method: "POST",
-        body: photoData
-    });*/
 });
     
 }  //onload
@@ -248,8 +240,8 @@ function cerrarBarra() {
 function leerM() {
     let datosLM = new FormData();
     datosLM.append("correoUsuario", correo);
-    fetch("http://tpaepg.orgfree.com/leerMensajes.php", {
-    //fetch("https://tallerprogramacionavanzada.000webhostapp.com/leerMensajes.php", {
+    //fetch("http://tpaepg.orgfree.com/leerMensajes.php", {
+    fetch("https://tallerprogramacionavanzada.000webhostapp.com/leerMensajes.php", {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         body: datosLM
     })
