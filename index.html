@@ -3,44 +3,56 @@
   <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <meta name="apple-mobile-web-app-title" content="Marranero">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
       <link rel="manifest" href="/manifest.json" />
       <meta name="theme-color" content="#333" />
       <link rel="stylesheet" type="text/css" href="css/app.css">
+      <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="images/icons/icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/icons/icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="images/icons/icon-167x167.png">
       <script src="js/feather.min.js"></script>
   </head>
   <body>
     <div id="ingreso">
-      <div id="titulo">El Marranero Móvil</div>
-      <br>
-      <br>
-      Correo <input id="correoI" type="email"> <br>
-      <br>
-      Contraseña <input id="contrasenaI" type="password"> <br>
-      <br>
-      <button id="btnIngresar" class="btn">Empuércate</button> <br>
-      <br>
-      <span id="btnRegistrar">Regístrate</span> </div>
+        <div id="titulo">El Marranero Móvil</div>
+        <br>
+        <br>
+        Correo <input id="correoI" type="email"> <br>
+        <br>
+        Contraseña <input id="contrasenaI" type="password"> <br>
+        <br>
+        <button id="btnIngresar" class="btn">Empuércate</button> <br>
+        <br>
+        <span id="btnRegistrar">Regístrate</span>
+    </div>
     <div id="registro"> Correo <input id="correoR" type="email"> <br>
       Nombre <input id="nombreR" type="text"> <br>
       Contraseña <input id="contrasenaR" type="password"> <br>
       Confirmar contraseña <input id="confirmacionR" type="password"> <br>
-      Fecha de nacimiento <input id="fecha" type="date"> <button id="btnRegistro">Registrar</button> </div>
+      Fecha de nacimiento <input id="fecha" type="date"> <button id="btnRegistro">Registrar</button>
+    </div>
     <div id="principal">
         <div id="menu"><span id="botnMenu" onclick="abrirBarra()"><i data-feather="align-justify"></i></span></div>
         <div class="titulo">El marranero móvil</div>
         <div id="bienvenida">Bienvenido(a) <span id="nombreP"></span></div>
         <div id="redactar"> Para:<br>
-          <input id="correoM" type="text"> <br>
-          Mensaje:<br>
-          <textarea id="mensajeM"></textarea> <br>
-          <button id="enviarM" class="btn">Enviar</button> </div>
+            <input id="correoM" type="text"> <br>
+            Mensaje:<br>
+            <textarea id="mensajeM"></textarea> <br>
+            <button id="enviarM" class="btn">Enviar</button>
+        </div>
         <div id="mensajes"> </div>
         <div id="camara">
-          <div class="container-photo">
-              <img id="photo" src="" class="photo">
-          </div>
-          <input accept="image/*" capture="camera" id="camera" class="inputget" type="file">
-          <button id="open">Foto</button>
+            <div class="container-photo">
+                <img id="photo" src="" class="photo">
+            </div>
+            <input accept="image/*" capture="camera" id="camera" class="inputget" type="file">
+            <button id="btnOpen">Foto</button>&nbsp;&nbsp;
+            <button id="mapa">Mapa</button>
+            <input id="lugar" type="text">
         </div>
     </div>
     <div id="barraMenu" class="menu">
